@@ -1,3 +1,0 @@
-/home/anyth/Doge/Dev/Stream-Tools/Overlay/build/CMakeFiles/overlay.dir
-/home/anyth/Doge/Dev/Stream-Tools/Overlay/build/CMakeFiles/edit_cache.dir
-/home/anyth/Doge/Dev/Stream-Tools/Overlay/build/CMakeFiles/rebuild_cache.dir

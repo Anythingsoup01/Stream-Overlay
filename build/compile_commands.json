@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/anyth/Doge/Dev/Stream-Tools/Overlay/build",
-  "command": "/usr/bin/c++  -I/home/anyth/Doge/Dev/Stream-Tools/Overlay/include -I/home/anyth/Doge/Dev/Stream-Tools/Overlay/pch -g -std=gnu++20 -o CMakeFiles/overlay.dir/src/main.cpp.o -c /home/anyth/Doge/Dev/Stream-Tools/Overlay/src/main.cpp",
-  "file": "/home/anyth/Doge/Dev/Stream-Tools/Overlay/src/main.cpp",
-  "output": "CMakeFiles/overlay.dir/src/main.cpp.o"
-}
-]
