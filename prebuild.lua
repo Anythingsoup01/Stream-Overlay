@@ -15,10 +15,23 @@ Project = {
     includedirs = {
         "include",
         "pch",
+        "dep/GLFW/include",
+        "dep/ImGui",
+        "dep/glad/include",
+        "dep/yaml/include",
     },
 
-    link = {
-        "gl",
-        "glfw3"
+    links = {
+        "GL",
+        "Glad",
+        "glfw",
+        "ImGui",
+        "yaml-cpp",
     }
 }
+
+
+External = "dep/glad"
+External = "dep/GLFW"
+External = "dep/ImGui"
+External = "dep/yaml"
