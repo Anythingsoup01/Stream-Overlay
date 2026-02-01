@@ -1,10 +1,8 @@
-
+#include "sopch.h"
 #include "window/serializer.h"
 
 #include <yaml-cpp/yaml.h>
 
-#include <filesystem>
-#include <fstream>
 
 void WindowSerializer::Serialize(const SerializedWindowData &data) {
 

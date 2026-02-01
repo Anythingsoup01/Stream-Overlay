@@ -1,11 +1,11 @@
+#include <sopch.h>
 #include "window/window.h"
-
-#include <stdio.h>
-#include <assert.h>
 
 #include <glad/glad.h>
 
 #include "event/application_event.h"
+
+#include "core/managed_types.h"
 
 // Setting GLFW Functions and Variables
 static bool s_GLFWInitialized = false;
@@ -32,7 +32,7 @@ void Window::OnUpdate()
 
 void Window::Clear()
 {
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
 void Window::Init(const WindowProperties& props)
@@ -44,7 +44,9 @@ void Window::Init(const WindowProperties& props)
     m_Data.PosX = props.PosX;
     m_Data.PosY = props.PosY;
 
+    #ifdef SO_PLATFORM_LINUX
     glfwInitHint(GLFW_PLATFORM, GLFW_PLATFORM_X11);
+    #endif
 
     // Initializing GLFW
     if (!s_GLFWInitialized) {
@@ -52,6 +54,7 @@ void Window::Init(const WindowProperties& props)
         glfwSetErrorCallback(GLFWErrorCallback);
         assert(success);
     }
+
     glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
 
     m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);

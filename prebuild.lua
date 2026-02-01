@@ -8,6 +8,8 @@ Project = {
     language = "C++",
     dialect = "20",
 
+    pch = "pch/sopch.h",
+
     files = {
         "src/*.cpp",
     },
@@ -27,6 +29,17 @@ Project = {
         "glfw",
         "ImGui",
         "yaml-cpp",
+    },
+
+    filters = {
+        {
+            name = "configurations:Debug",
+            defines = "SO_DEBUG",
+        },
+        {
+            name = "configurations:Release",
+            defines = "SO_RELEASE",
+        }
     }
 }
 

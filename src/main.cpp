@@ -1,6 +1,4 @@
 
-
-
 #include "window/window.h"
 #include "imgui/imgui_layer.h"
 #include "event/application_event.h"
@@ -9,8 +7,6 @@
 
 #include <imgui.h>
 
-
-#define BIND_EVENT_FN(fn) [](auto&&... args) -> decltype(auto) { return fn(std::forward<decltype(args)>(args)...); }
 
 bool OnWindowMoveEvent(WindowMoveEvent& e) {
     return false;
