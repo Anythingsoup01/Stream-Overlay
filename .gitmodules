@@ -1,0 +1,12 @@
+[submodule "dep/GLFW"]
+	path = dep/GLFW
+	url = https://github.com/Anythingsoup01/GLFW
+[submodule "dep/ImGui"]
+	path = dep/ImGui
+	url = https://github.com/Anythingsoup01/imgui
+[submodule "dep/glad"]
+	path = dep/glad
+	url = https://github.com/anythingsoup01/glad
+[submodule "dep/yaml"]
+	path = dep/yaml
+	url = https://github.com/anythingsoup01/yaml-cpp
